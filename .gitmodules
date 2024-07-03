@@ -1,0 +1,8 @@
+[submodule "carla"]
+	path = carla
+	url = https://gitlab.com/s3lab-code/public/drivefuzz.git
+	branch = master
+[submodule "carla-autoware"]
+	path = carla-autoware
+	url = https://gitlab.com/s3lab-code/public/drivefuzz.git
+	branch = master
