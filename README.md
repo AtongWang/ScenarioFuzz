@@ -1,4 +1,5 @@
-English | [简体中文](README_CN.md)
+English | [简体中文](README_CN.md) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12633908.svg)](https://doi.org/10.5281/zenodo.12633908)
+
 # ScenarioFuzz
 
 ![img](readme_img/workflow.jpg "Workflow")

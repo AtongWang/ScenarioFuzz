@@ -1,4 +1,5 @@
-简体中文 | [English](README.md)
+简体中文 | [English](README.md) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12633908.svg)](https://doi.org/10.5281/zenodo.12633908)
+
 # ScenarioFuzz
 
 ![img](readme_img/workflow.jpg "框架")
