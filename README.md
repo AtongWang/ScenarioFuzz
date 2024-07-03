@@ -20,8 +20,7 @@ ScenarioFuzz is a framework that focuses on conducting fuzz testing on autonomou
 
 Our experimental results demonstrate that this approach effectively and accurately identifies corner cases in autonomous driving systems, exposing a series of system bugs.
 
-Our paper titled "ScenarioFuzz: Identifying Critical Scenarios in Autonomous Driving through Fuzz Testing with Scenario Evaluation Model" has been submitted for the second round of review at ICSE 2024.
-
+Our paper titled " Dance of the ADS: Orchestrating Failures through Historically-Informed Scenario Fuzzing" has been accepted at ISSTA2024!
 
 ## Testing Environment
 

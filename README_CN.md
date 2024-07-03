@@ -14,7 +14,7 @@ ScenarioFuzz 是一个侧重于从场景层面对自动驾驶系统进行模糊�
 
 我们的实验结果表面，该方法能够高效、准确地识别到自动驾驶系统的角落场景，并暴露出系统的一系列bugs。
 
-我们的论文，"ScenarioFuzz: Identifying Critical Scenarios in Autonomous Driving through Fuzz Testing with Scenario Evaluation Model	",已投稿ICSE 2024 第二轮。 
+我们的论文，" Dance of the ADS: Orchestrating Failures through Historically-Informed Scenario Fuzzing",已被 ISSTA2024 录用。
 
 
 ## Testing environment
