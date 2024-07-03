@@ -1,0 +1,181 @@
+<mxfile host="app.diagrams.net" modified="2023-04-20T17:10:08.780Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="tvqPajDmBMhIpI323cU-" version="21.2.1" type="device">
+  <diagram name="第 1 页" id="YhNCKwIfGs6zysu1mUFw">
+    <mxGraphModel dx="1434" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TpapcrkWYc_moOGd2SxI-1" value="Input: node_features, edge_attr, weather_attr, edge_index, node_batch, edge_batch" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="628" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-2" value="Node GAT Layer 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="263" y="104" width="141" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-3" value="Node BatchNorm 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="188" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-4" value="Node Dropout" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="277" y="272" width="113" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-5" value="Node GAT Layer 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="263" y="356" width="141" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-6" value="Node BatchNorm 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-7" value="Node View &amp; Mean" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="524" width="149" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-8" value="Edge GAT Layer 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="265" y="608" width="139" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-9" value="Edge BatchNorm 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="261" y="692" width="146" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-10" value="Edge Dropout" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="278" y="776" width="111" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-11" value="Edge GAT Layer 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="265" y="860" width="139" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-12" value="Edge BatchNorm 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="261" y="944" width="146" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-13" value="Edge View &amp; Mean" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="261" y="1028" width="147" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-14" value="Weather MLP Layer 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="251" y="1112" width="165" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-15" value="Weather BatchNorm 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="248" y="1196" width="172" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-16" value="Weather MLP Layer 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="251" y="1280" width="165" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-17" value="Global Mean Pooling" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="254" y="1364" width="159" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-18" value="Concatenation" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1448" width="119" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-19" value="Readout MLP Layer 1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="252" y="1532" width="164" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-20" value="Readout MLP Layer 2" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="252" y="1616" width="164" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-21" value="Sigmoid Activation" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1700" width="147" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-22" value="Output" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="302" y="1784" width="65" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.500124402866242;exitY=1;entryX=0.5041001773049646;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-1" target="TpapcrkWYc_moOGd2SxI-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5041001773049646;exitY=1;entryX=0.5005278716216216;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-2" target="TpapcrkWYc_moOGd2SxI-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-25" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5005278716216216;exitY=1;entryX=0.5051161504424779;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-3" target="TpapcrkWYc_moOGd2SxI-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5051161504424779;exitY=1;entryX=0.5041001773049646;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-4" target="TpapcrkWYc_moOGd2SxI-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5041001773049646;exitY=1;entryX=0.5005278716216216;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-5" target="TpapcrkWYc_moOGd2SxI-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5005278716216216;exitY=1;entryX=0.4971686241610738;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-6" target="TpapcrkWYc_moOGd2SxI-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.4971686241610738;exitY=1;entryX=0.49696492805755393;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-7" target="TpapcrkWYc_moOGd2SxI-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-30" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.49696492805755393;exitY=1;entryX=0.500535102739726;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-8" target="TpapcrkWYc_moOGd2SxI-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-31" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.500535102739726;exitY=1;entryX=0.5052083333333334;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-9" target="TpapcrkWYc_moOGd2SxI-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-32" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5052083333333334;exitY=1;entryX=0.49696492805755393;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-10" target="TpapcrkWYc_moOGd2SxI-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-33" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.49696492805755393;exitY=1;entryX=0.500535102739726;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-11" target="TpapcrkWYc_moOGd2SxI-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-34" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.500535102739726;exitY=1;entryX=0.4971301020408163;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-12" target="TpapcrkWYc_moOGd2SxI-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-35" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.4971301020408163;exitY=1;entryX=0.5035037878787879;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-13" target="TpapcrkWYc_moOGd2SxI-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-36" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5035037878787879;exitY=1;entryX=0.5004542151162791;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-14" target="TpapcrkWYc_moOGd2SxI-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-37" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5004542151162791;exitY=1;entryX=0.5035037878787879;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-15" target="TpapcrkWYc_moOGd2SxI-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-38" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5035037878787879;exitY=1;entryX=0.5036360062893082;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-16" target="TpapcrkWYc_moOGd2SxI-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-39" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5036360062893082;exitY=1;entryX=0.4964548319327731;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-17" target="TpapcrkWYc_moOGd2SxI-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-40" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.4964548319327731;exitY=1;entryX=0.5004763719512195;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-18" target="TpapcrkWYc_moOGd2SxI-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-41" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5004763719512195;exitY=1;entryX=0.5004763719512195;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-19" target="TpapcrkWYc_moOGd2SxI-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-42" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5004763719512195;exitY=1;entryX=0.5039328231292517;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-20" target="TpapcrkWYc_moOGd2SxI-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TpapcrkWYc_moOGd2SxI-43" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5039328231292517;exitY=1;entryX=0.4935096153846154;entryY=0;rounded=0;" edge="1" parent="1" source="TpapcrkWYc_moOGd2SxI-21" target="TpapcrkWYc_moOGd2SxI-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
