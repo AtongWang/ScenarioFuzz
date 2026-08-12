@@ -1,3 +1,5 @@
+
+
 English | [简体中文](README_CN.md) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12633908.svg)](https://doi.org/10.5281/zenodo.12633908)
 
 # ScenarioFuzz
@@ -102,7 +104,7 @@ Please follow [INSTALL.md](./INSTALL.md) to install all required packages.
 
    * Note the following:
 
-     1) You need to modify the `PROJECT_ROOT`, `CARLA_ROOT` and `CACHE_ROOT`paths.
+     1) You need to modify the `PROJECT_ROOT`, `CARLA_ROOT` and `CACHE_ROOT` paths.
 
      2) The system under test is configured by modifying the `SYSTEM_NAME`, except for multi-GPU scenarios.
         ('autoware', 'behavior', 'leaderboard-NEAT', 'basic', 'leaderboard-LAV', 'leaderboard-Transfuser')
